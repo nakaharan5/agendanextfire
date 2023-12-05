@@ -1,0 +1,97 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    form{
+        width: 500px;
+        margin-right: 1rem;
+        text-align: center;
+
+        input, textarea{
+            width: 100%;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border: 1px solid rgb(0,0,0, 0.25);
+            border-radius: 0.3rem;
+        }
+
+        textarea{
+            resize: none;
+        }
+
+        button{
+            padding: 1rem;
+            width: 40%;
+            background-color: rgb(195, 255, 56);
+            border-radius: 0.5rem;
+            border: none;
+            color: black;
+        }
+
+        button:hover{
+            background-color: rgb(174, 231, 40);
+            transition: 0.2s;
+        }
+    }
+
+    .caixaContatos{
+        width: 500px;
+        height: 500px;
+        padding: 1rem;
+        background-color: #373737;
+        border-radius: 0.3rem;
+        margin-left: 5rem;
+        overflow: auto;
+
+        input{
+            
+                width: 100%;
+                padding: 1rem;
+                margin: 0.5rem 0;
+                border: 1px solid rgb(0,0,0, 0.25);
+                border-radius: 0.3rem;
+            
+        }
+       
+    }
+
+    .caixaIndividual{
+        background-color: #454545;
+        border-radius: 0.5rem;
+        box-sizing: content-box;
+        max-height: 200px;
+        text-align: left;
+        margin-top: 10px;
+
+        .nomeTitulo{
+            font-size: 1.5rem;
+            text-align: left;
+            padding: 0.1rem 0.3rem;
+            font-weight: bold;
+        }
+
+        .boxTitulo{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          a{
+            color: red;
+            transition: 0.2s;
+            padding-right: 0.3rem;
+
+            &:hover{
+                color: rgb(212, 75, 75);
+                transition: 0.2s;
+            }
+          }
+        }
+
+        .dados{
+            padding: 0.5rem;
+        }
+    }
+}
+
